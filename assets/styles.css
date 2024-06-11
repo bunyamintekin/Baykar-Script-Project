@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#quiz-container {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#question-container {
+    margin-bottom: 20px;
+}
+
+#choices {
+    list-style-type: none;
+    padding: 0;
+}
+
+#choices li {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: not-allowed; /* İlk 10 saniye tıklanmayı engelle */
+}
+
+#choices li.enabled {
+    cursor: pointer; /* 10 saniye sonra tıklanabilir yap */
+    border-color: #000;
+}
+
+#timer {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#results-container {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#results-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#results-table th, #results-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
